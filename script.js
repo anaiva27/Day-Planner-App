@@ -1,51 +1,21 @@
 // display current day/month
-
 $("#currentDay").text(moment().format('dddd, MMMM Do'));
 
-// array of containers to add text, initially set to an empty value
-// var arrText = [{ textarea: "#9AM", text: "" },
-// { textarea: "#10AM", text: "" },
-// { textarea: "#11AM", text: "" },
-// { textarea: "#12PM", text: "" },
-// { textarea: "#1PM", text: "" },
-// { textarea: "#2PM", text: "" },
-// { textarea: "#3PM", text: "" },
-// { textarea: "#4PM", text: "" },
-// { textarea: "#", text: "" },
-// { textarea: "#9", text: "" },
-// ];
-
 var row = $(".row");
-console.log($(".row"));
-// grab textarea value, add to local storage
-// var storedData = localStorage.getItem(addValueID);
-for (i = 0; i < row.length; i++) {
-    // $(storedData[i].textarea).val(storedData[i].text);
-    $("#"+i).val(localStorage.getItem(i))
-  
-}
 
-// $("#9AM").val(localStorage.getItem(addValueID));
-
+// grab users input value, add to local storage
 $("button").click(function () {
-    // console.log($(this).prev().val());
-    // console.log($(this).prev().attr("id"));
-    // for (j = 0; j < arrText.length; j++) {
-
-    //     if (arrText[j].textarea == "#" + addValueID) {
-    //         arrText[j].text = addValue;
-    //     }
-    // }
-
-    // grabbing value of the users input, saving it to local storage
     var addValueID = $(this).prev().attr("id");
     var addValue = $(this).prev().val();
     localStorage.setItem(addValueID, addValue);
 })
 
+// retrieve text from storage to the screen
+for (i = 0; i < row.length; i++) {
+    $("#"+i).val(localStorage.getItem(i))
+}
 
 // compare times, add color classes
-
 var timeForm = "hh:mm:ss";
 var arrTimes = [{ textarea: $("#0"), begin: "09:00:00", end: "09:59:59" },
 { textarea: $("#1"), begin: "10:00:00", end: "10:59:59" },

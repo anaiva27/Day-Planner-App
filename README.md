@@ -2,7 +2,7 @@
 
 ## Description 
 
-The client has requested a simple calendar planner application, that allows to save events for each hour, for better time managment. The program should easy to use, also each time block needs to be colored in different colors for past, present and future tasks. Saved events have to stay inside the blocks, after being saved, even if browser window will be closed and reloaded.
+The client has requested a simple calendar planner application for efficient time management, that saves events for each hour. The program should easy to use, also each time block needs to be colored in different colors for the past, present and future tasks. The events have to stay inside the blocks, after being saved, even if the browser window will be closed and reloaded.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ The client has requested a simple calendar planner application, that allows to s
 
 ## Installation
 
-To complete this task, various libraries need to be installed, such as jQuery, Moment.js and Bootstrap to ensure the best functionality and appropriate styles. Also we added links to fonts from [google.com](https://fonts.googleapis.com/) and [fontawesome.com](https://fontawesome.com/). Google Chrome Dev Tools were used to test the applications and to make sure that everything is working properly. Software ScreenCastify was installed to capture the screenshots of the application to present it and explain the usage. The file structure contains index, style and script files, written in HTML, CSS and JavaScript languages. Quality comments added for better understanding the code, in case it needs to be modified in the future.
+To complete this task, various libraries needed to be installed, such as jQuery, Moment.js and Bootstrap to ensure the best functionality and appropriate styles. Also we added links to fonts from [google.com](https://fonts.googleapis.com/) and [fontawesome.com](https://fontawesome.com/). Google Chrome Dev Tools were used to test the applications and to make sure that everything is working properly. Software ScreenCastify was installed to capture the screenshots of the application to present it and explain the usage. The file structure contains index, style and script files, written in HTML, CSS and JavaScript languages. Quality comments added for better understanding the code, in case it needs to be modified in the future.
 
 ## Usage
 
