@@ -12,7 +12,7 @@ $("button").click(function () {
 
 // retrieve text from storage to the screen
 for (i = 0; i < row.length; i++) {
-    $("#"+i).val(localStorage.getItem(i))
+    $("#" + i).val(localStorage.getItem(i));
 }
 
 // compare times, add color classes
